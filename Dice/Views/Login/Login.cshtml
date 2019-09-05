@@ -1,0 +1,30 @@
+﻿@model List<Dice.Models.JugadoresModel>
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Index", "Dice", FormMethod.Post))
+{
+<div class="form-group">
+    <label for="NombreJugador1">Ingrese nombre Jugador 1</label>
+    <input type="text" class="form-control"
+           name="NombreJugador1"
+           id="NombreJugador1" aria-describedby="emailHelp" placeholder="Nombre Uno">
+
+    <label for="EdadJugador1">Ingrese Edad Jugador 1</label>
+    <input type="text" class="form-control"
+           name="EdadJugador1"
+           id="EdadJugador1" >
+
+
+
+    <label for="NombreJugador2">Ingrese nombre Jugador 2</label>
+    <input type="text"
+           name="NombreJugador2"
+           class="form-control" id="NombreJugador2" aria-describedby="emailHelp" placeholder="Nombre Dos">
+</div>
+
+    <button type="submit">Iniciar Juego</button>
+}

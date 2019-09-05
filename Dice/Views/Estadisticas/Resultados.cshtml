@@ -1,0 +1,27 @@
+﻿@model  Dice.Models.EstadisticaModel
+@{
+    ViewBag.Title = "Resultados";
+}
+
+<h2>Resultados</h2>
+
+<table border="1">
+    <tr>
+        <td>Jugador 1</td>
+        <td>@Model.CantidadJugador1</td>
+        <td>
+            % @Model.Porcentaje1 y calculado = @Model.Porcentaje1Calculado
+
+        </td>
+    </tr>
+    <tr>
+        <td>Jugador 2</td>
+        <td>@Model.CantidadJugador2</td>
+        <td>% @Model.Porcentaje2</td>
+    </tr>
+    <tr>
+        <td>Empate</td>
+        <td>@Model.CantidadEmpates</td>
+        <td>% @Model.PorcentajeEmpate</td>
+    </tr>
+</table>
